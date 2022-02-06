@@ -17,12 +17,12 @@
                 background-color: black;
                 color: white;
                 font-family: 'Oswald', sans-serif;
-                font-size: 1.5em;
+                font-size: 2rem;
             }
 
             .app {
                 width: 100%;
-                height: 850px;
+                height: 1000px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -32,23 +32,38 @@
             }
 
             canvas {
-                margin-bottom: 50px;
+                margin-bottom: 40px;
             }
 
             #tz-info {
-                font-size: 36px;
+                font-size: 3rem;
                 font-family: 'Oswald', sans-serif;
                 font-style: italic;
+                font-weight: bold;
                 color: red;
+            }
+
+            .dummy {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            select {
+                margin-top: 20px;
             }
         </style>
     </head>
     <body>
         <div class="app">
             <canvas id="canvas"></canvas>
-            <div>Showing local time for <span id="tz-info"></span></div>
-            <div id="everywhere"></div>    
-            <select id="timezone"></select>
+            <div class="dummy">
+                <div>Showing local time for</div>
+                <div id="tz-info"></div>
+                <div id="everywhere"></div>    
+                <select id="timezone"></select>    
+            </div>
         </div>
     </body>
 </html>
