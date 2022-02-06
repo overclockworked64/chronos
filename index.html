@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@600&display=swap" rel="stylesheet"> 
         <script src="main.js"></script>
         <style>
             body {
@@ -10,7 +16,7 @@
             div {
                 background-color: black;
                 color: white;
-                font-family: sans-serif;
+                font-family: 'Oswald', sans-serif;
                 font-size: 1.5em;
             }
 
@@ -28,12 +34,19 @@
             canvas {
                 margin-bottom: 50px;
             }
+
+            #tz-info {
+                font-size: 36px;
+                font-family: 'Oswald', sans-serif;
+                font-style: italic;
+                color: red;
+            }
         </style>
     </head>
     <body>
         <div class="app">
             <canvas id="canvas"></canvas>
-            <div id="tz-info"></div>
+            <div>Showing local time for <span id="tz-info"></span></div>
             <div id="everywhere"></div>    
             <select id="timezone"></select>
         </div>
